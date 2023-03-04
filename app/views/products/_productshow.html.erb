@@ -1,0 +1,20 @@
+
+
+<div class="card mb-3">
+  <%= image_tag(product.image)%>
+
+ 
+  <div class="card-body">
+    <h3 class="card-title">Name:  <%= product.name %></h3>
+    <h4 class="card-title">Price:  $<%= product.price %></h4>
+    <p class="card-text">Style:  <%= product.style %></p>
+    <p class="card-text">brand:  <%= product.brand %></p>
+    <p class="card-text">Speed:  <%= product.speed %></p>
+     <p class="card-text">Type:  <%= product.bicycleh_type %></p>
+    <p class="card-text"><%= product.descreption %></p>
+
+    <p class="card-text"><small class="text-muted">Last updated <%= product.updated_at  %></small></p>
+  </div>
+</div>
+
+</div>

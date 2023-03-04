@@ -1,0 +1,20 @@
+<%= stylesheet_link_tag 'home.css', media: 'all', 'data-turbolinks-track' => true%>
+
+<div class="tit">
+ <h5>Get your Bike Now!</h5>
+ <p>
+   <strong>
+     Can’t wait another minute to get your hands on the latest bikes?
+   </strong>
+    <br/>
+   Order online and pick up at your local Specialized location or take advantage of FREE shipping on orders
+ </p>
+
+<%if client_signed_in? %>
+<br/>
+<%= link_to "Shop Now" , products_path , class:"btn btn-primary" %>
+<%else%>
+<br/>
+<%= link_to "sign In Now" , new_client_session_path , class:"btn btn-primary" %>
+<%end%>
+</div>
